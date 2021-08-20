@@ -1,12 +1,12 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 
 import React from "react";
-import { useMyContext } from "../contexts/Context";
+//import { useMyContext } from "../contexts/Context";
 
 export function Hero() {
-  const { isModalOpen } = useMyContext();
+//  const { isModalOpen } = useMyContext();
   return (
-    <Box align="center" w="100vw" bg={isModalOpen ? "blue.100" : "blue.200"}>
+    <Box align="center" w="100%" bg="blue.100">
       <Flex pt={100} 
         px="1rem"
         align="center"

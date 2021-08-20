@@ -21,14 +21,11 @@ import { FaThList } from "react-icons/fa";
 import React from "react";
 import { LogoSvg } from "../icons";
 
-import { useMyContext } from "../contexts/Context";
-
 export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { isModalOpen, setIsModalOpen } = useMyContext();
   return (
     <header>
-      <Box pos="fixed" align="center" w="100vw" bg="gray.100">
+      <Box pos="fixed" align="center" w="100%" bg="gray.100">
         <Flex
           p="1rem"
           w="full"
@@ -51,7 +48,7 @@ export function Header() {
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
 
-            <DrawerBody>
+            <DrawerBody onClick={onClose}>
               <VStack spacing={10}>
                 <Menu />
               </VStack>
@@ -75,7 +72,7 @@ const Menu = () => (
     <Text as="a" href="#">
       Link2
     </Text>
-    <Text onClick={() => setIsModalOpen(!isModalOpen)} as="a" href="#">
+    <Text as="a" href="#">
       Link3
     </Text>
   </>
