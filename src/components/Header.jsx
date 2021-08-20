@@ -42,10 +42,10 @@ export function Header() {
             <FaThList />
           </IconButton>
         </Flex>
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+        <Drawer autoFocus={false} returnFocusOnClose={false} isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerCloseButton />
+            <DrawerCloseButton m={3} />
             <DrawerHeader>Menu</DrawerHeader>
 
             <DrawerBody onClick={onClose}>
