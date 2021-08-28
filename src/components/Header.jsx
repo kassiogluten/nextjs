@@ -24,8 +24,7 @@ import { LogoSvg } from "../icons";
 export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <header>
-      <Box pos="fixed" align="center" w="100%" bg="gray.100">
+      <Flex pos="fixed" justify="center" align="center" w="100%" bg="gray.100" as="header">
         <Flex
           p="1rem"
           w="full"
@@ -59,8 +58,7 @@ export function Header() {
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Box>
-    </header>
+      </Flex>
   );
 }
 
