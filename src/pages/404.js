@@ -1,11 +1,10 @@
-import { Box, Button, Container, Flex, Heading } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading } from "@chakra-ui/react";
 import Head from "next/head";
 import { Header } from "../components/Header";
-import { Hero } from "../components/Hero";
 
 export default function Custom404() {
   return (
-    <div>
+    <>
       <Head>
         <title>ERRO 404</title>
       </Head>
@@ -26,6 +25,6 @@ export default function Custom404() {
           </Button>
         </Flex>
       </Box>
-    </div>
+    </>
   );
 }

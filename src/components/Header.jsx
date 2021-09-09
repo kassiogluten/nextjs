@@ -37,7 +37,7 @@ export function Header() {
           <HStack display={{ base: "none", sm: "flex" }} spacing={10}>
             <Menu />
           </HStack>
-          <IconButton onClick={onOpen} display={{ base: "flex", sm: "none" }}>
+          <IconButton aria-label="Abrir menu de navegação" onClick={onOpen} display={{ base: "flex", sm: "none" }}>
             <FaThList />
           </IconButton>
         </Flex>
