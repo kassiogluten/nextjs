@@ -1,8 +1,18 @@
-import { Box, Button, Flex, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Text,
+  Badge,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { useRouter } from "next/router";
 
 export default function Custom404() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -16,10 +26,14 @@ export default function Custom404() {
           maxW={1200}
           bg="blue.50"
           justify="space-between"
-          h={300}
+          h={400}
           flexDir="column"
         >
           <Heading>Página não encontrada</Heading>
+          <HStack>
+            <Text>Erro 404 no link:</Text>
+            <Badge>{router.asPath}</Badge>
+          </HStack>
           <Button as="a" href="/">
             Voltar
           </Button>
