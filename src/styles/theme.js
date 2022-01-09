@@ -4,8 +4,10 @@ export const theme = extendTheme({
   initialColorMode: "dark",
   useSystemColorMode: false,
   fonts: {
-    heading: "CaviarDreams",
-    body: "CaviarDreams",
+    heading: "Roboto",
+    body: "Roboto",
+    // heading: "CaviarDreams",
+    // body: "CaviarDreams",
   },
   colors: {
     rosaxoq: "#ff00ff",
@@ -13,10 +15,10 @@ export const theme = extendTheme({
   components: {
     Button: {
       baseStyle: {
-        outline:'none',
         _hover: {
-          //textDecoration: "underline",
+          // textDecoration: "underline",
         },
+        
       },
     },
   },
@@ -36,6 +38,9 @@ export const theme = extendTheme({
         color: "var(--white)",
         lineHeight: "inherit", */
       },
+      button:{
+        _focus: { outlineColor: "#00000011" },
+      }
     },
   },
 });

@@ -7,11 +7,14 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
           <link href="/fonts/fonts.css" rel="stylesheet" />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
         </Head>
         <body>
-          <ColorModeScript initialColorMode={"light"} />
+          <ColorModeScript initialColorMode={"dark"} />
           <Main />
           <NextScript />
         </body>
