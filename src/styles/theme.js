@@ -13,6 +13,7 @@ export const theme = extendTheme({
   components: {
     Button: {
       baseStyle: {
+        outline:'none',
         _hover: {
           //textDecoration: "underline",
         },
@@ -21,9 +22,10 @@ export const theme = extendTheme({
   },
   styles: {
     global: {
-      svg: {
-        display: "inline",
-      },
+      // svg: {
+      //   display: "inline",
+      //   lineHeight: "1",
+      // },
       a: {
         _hover: {
           //textDecoration: "underline",

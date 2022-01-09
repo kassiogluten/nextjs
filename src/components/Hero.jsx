@@ -9,24 +9,23 @@ import {
   HStack,
   Center,
   Button,
+  Wrap,
 } from "@chakra-ui/react";
 
 export function Hero() {
   return (
-    <Flex as="section" justify="center" align="center" w="100%" bg="blue.900">
+    <Flex as="section" justify="center" align="center" w="100%">
       <Flex
         p="5rem 1rem"
         align="center"
         maxW={1200}
         w="full"
-        bg="blue.500"
         justify="space-between"
-        h={700}
         flexDir={{ base: "column", sm: "row" }}
         //flexDir="column"
       >
-        <Heading>Texto</Heading>
-        <Heading>Texto</Heading>
+        <Heading pt={100}>Texto</Heading>
+        <Heading pt={100}>Texto</Heading>
       </Flex>
     </Flex>
   );
