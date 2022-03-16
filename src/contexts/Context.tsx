@@ -1,7 +1,23 @@
-import { createContext, useContext, useState } from "react";
-const Context = createContext();
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useContext,
+  useState,
+} from "react";
+const Context = createContext({} as ContextProviderProps);
 
-export function ContextProvider({ children }) {
+interface SidebarDrawerProvider {
+  children: ReactNode;
+}
+
+type ContextProviderProps = {
+  isModalOpen: boolean;
+  setIsModalOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+export function ContextProvider({ children }: SidebarDrawerProvider) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
