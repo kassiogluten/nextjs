@@ -11,6 +11,7 @@ import {
   Button,
   Wrap,
 } from "@chakra-ui/react";
+import { darken } from "@chakra-ui/theme-tools";
 
 export function Hero() {
   return (
@@ -24,7 +25,13 @@ export function Hero() {
         flexDir={{ base: "column", sm: "row" }}
         //flexDir="column"
       >
-        <Heading pt={100}>Texto</Heading>
+        <Heading
+          color="blue.800"
+          pt={100}
+          _hover={{ color: darken("blue.800", 10) }}
+        >
+          Texto
+        </Heading>
         <Heading pt={100}>Texto</Heading>
       </Flex>
     </Flex>
